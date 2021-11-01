@@ -35,7 +35,7 @@ public class CustomListTest {
     }
 
     @Test
-    void testDeleteCity(){
+    public void testDeleteCity(){
         City charlottetown = new City("Charlottetown", "Prince Edward Island");
         list.addCity(charlottetown);
         list.deleteCity(charlottetown);
