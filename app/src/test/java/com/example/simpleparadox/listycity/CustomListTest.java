@@ -47,11 +47,11 @@ public class CustomListTest {
 
     @Test
     public void testCountCities(){
-        assertEquals(1,list.countCities());
+        assertEquals(0,list.countCities());
         City charlottetown = new City("Charlottetown", "Prince Edward Island");
         list.addCity(charlottetown);
-        assertEquals(2,list.countCities());
-        list.deleteCity(charlottetown);
         assertEquals(1,list.countCities());
+        list.deleteCity(charlottetown);
+        assertEquals(0,list.countCities());
     }
 }
